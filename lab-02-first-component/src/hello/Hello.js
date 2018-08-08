@@ -8,13 +8,18 @@ class Hello extends Component {
       myActivities: ['Coding', 'laughing', 'playing with my Kids']
     };
   }
+  addActivity() {
+    this.setState(state => ({
+      myActivities: state.myActivities
+    }));
+  }
 
   render() {
     return (
       <div className="hello">
         <h1>{this.state.greeting}, {this.props.friend}</h1>
         <input placeholder="Add Activity"/>
-        <button type="submit">Submit</button>
+        <button onClick={this.addActivity}>Submit</button>
         <span/>
         <h1>My activities</h1>
         <ul>
