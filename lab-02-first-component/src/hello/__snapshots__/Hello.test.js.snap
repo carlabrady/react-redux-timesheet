@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render to match the snapshot 1`] = `
+<div
+  className="hello"
+>
+  <h1>
+    Good Morning
+    , 
+    Sam
+  </h1>
+  <input
+    placeholder="Add Activity"
+  />
+  <button
+    type="submit"
+  >
+    Submit
+  </button>
+  <span />
+  <h1>
+    My activities
+  </h1>
+  <ul>
+    <li>
+      Coding
+    </li>
+    <li>
+      laughing
+    </li>
+    <li>
+      playing with my Kids
+    </li>
+  </ul>
+</div>
+`;
