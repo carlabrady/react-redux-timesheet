@@ -21,6 +21,15 @@ class App extends Component {
         <div className="App">
           <Navigation />
           <Switch>
+            <Route path='/employees/detail/:_id' component={EmployeesDetail} />
+            <Route path='/employees/create' component={EmployeesCreate} />
+
+            <Route exact path='/employees/:user_id/timesheets/detail/:_id' component={TimesheetsDetail} />
+
+            <Route path='/employees/:user_id/timesheets/detail/:timesheet_id/timeunits/create' component={TimeunitsCreate} />
+            <Route path='/employees/:user_id/timesheets/detail/:timesheet_id/timeunits/detail/:_id' component={TimeunitsDetail} />
+
+            <Route path='/timesheets/create' component={TimesheetsCreate} />
             <Route exact path="/projects" component={Projects} />
             <Route path="/projects/detail/:_id" component={ProjectsDetail} />
             <Route path="/projects/create" component={ProjectsCreate} />

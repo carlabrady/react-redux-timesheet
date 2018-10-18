@@ -16,6 +16,14 @@ class EmployeeRow extends Component {
   }
 
   //TODO: showDetail function goes here
+  showDetail(employee) {
+    if(employee.deleted) {
+      console.log('You cannot edit a deleted employee.');
+      return;
+    }
+  
+    this.props.history.push('/employees/detail/' + employee._id);
+  }
 
   render() {
     const employee = this.props.employee;
